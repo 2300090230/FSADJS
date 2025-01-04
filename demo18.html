@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JAVASCRIPT</title>
+    <script>
+    // object - key value pair 
+    let student ={
+        id:101,
+        name:"Laxman",
+        gender:'male',
+        age:19
+
+    }
+    // array or list
+    // array index will start from 0 because for it is the base address so that is reason it will start from 0 
+    let products = ["MILK","CURD","MOBILE","NAILPOLISH","LEMON"]
+    document.writeln(typeof products+"<br>")
+    document.writeln(products.length+"<br>")
+    document.writeln(products[6]+"<br><br>")
+
+
+    //for loop
+    document.writeln("for loop execution <br><br>")
+    for(i=0;i<products.length;i++)
+        document.writeln(products[i],"<br>")
+    document.writeln("<br>")
+    document.writeln("for of loop execution <br><br>")
+    for ( p of products){
+        document.writeln(p,"<br>")
+    }
+    document.writeln("<br>")
+    document.writeln("<h3>for in  loop execution </h3><br><br>")
+    for ( i in products){
+        document.writeln(products[i],"<br>")
+    }
+    document.writeln("<br><br>")
+
+    let numbers=[141,143,142,144,145]
+    sum=0
+    document.writeln("<br>")
+    for( value of numbers){
+        sum+=value
+    }
+    document.writeln("Sum= "+sum+"<br>")
+    document.writeln("<b>for eachloop</b><br>")
+    products.forEach( (p) =>{
+        document.writeln(p+"<br>")
+    })
+    document.writeln(" <br> <b>for each loop  numbers array </b><br>")
+    numbers.forEach((n)=>{
+        document.writeln(n+"<br>")
+    })
+    document.writeln(" <br> <b>for each loop  with 2 arguments </b><br>")
+    products.forEach( (p,i) =>{
+        document.writeln(i+1,":",p,"<br>")
+    })
+    </script>
+</head>
+<body>
+    
+</body>
+</html>

@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JAVASCRIPT</title>
+    <script>
+        // callback - passing function as argument to the function call
+        document.writeln(" <br> <b> Callback function </b><br>")
+        const display = () =>document.writeln("Display functions")
+        const demo = (a,b,callback)=>{
+            document.writeln("Demo Function <br>")
+            document.writeln((a+b)+"<br>")
+            callback()
+        }
+        demo(140,3,display) // dispaly as call (function argument)
+       
+    </script>
+</head>
+<body>
+    
+</body>
+</html>
